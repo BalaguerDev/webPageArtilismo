@@ -7,18 +7,35 @@
 /* INDEX */
 
 .portada{
-    background: url(./Assets/folder5/Imagen19.jpg) no-repeat center fixed;
+    background: url(./Assets/Imagenes/Imagen\ 19.jpg) no-repeat center;
     background-size: cover;
-    background-position-y: -65vh;
+    background-position-y: -60vh;
     width: 100%;
     height: 100vh;
 }
-
 
 .logo {
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+.logo img{
+    width: 20vh;
+}
+
+.icons{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.icons img{
+    width: 6em;
+    height: 6em;
+    margin: 30px 30px;
+
 }
