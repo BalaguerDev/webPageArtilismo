@@ -33,9 +33,9 @@
     justify-content: center;
 }
 
-.icons img{
-    width: 6em;
-    height: 6em;
-    margin: 30px 30px;
+.icons a{
+    width: 3em;
+
+    margin: 30px 1px;
 
 }
