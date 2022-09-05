@@ -28,16 +28,14 @@
 
 .icons{
     width: 100%;
- 
     position: absolute;
     display: flex;
     justify-content: center;
 }
 
-.icons a{
-    width: 10vh;
-    margin: 30px 10px;
-
+.icons a img{
+    width: 3vh;
+    margin: 30px 30px;
 }
 
 
