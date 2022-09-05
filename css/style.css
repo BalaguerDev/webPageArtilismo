@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/* INDEX */
+
+.bkg{
+    background: url(../Assets/Imagenes/Imagen\ 19.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #464646;
+    background-position-y: 35%;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 20vw;
+}
+
+.icons{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.icons a img{
+    width: 3vh;
+    margin: 30px 30px;
+}
+
+
+
+/* TAMAÑO SMARTPHONES */
+
+@media only screen and (max-width: 767px) {
+    body {
+      background-image: url(../Assets/Imagenes/Imagen\ 19.jpg);
+    }
+
+    .logo img{
+        width: 30vw;
+    }
+
+    .icons{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .icons a img{
+        width: 4vw;
+    
+    }
+  }
+
+
+  /* HOME */
+
+.containHome{
+    background: url(../Assets/Imagenes/DSC_8364i238.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #582E29;
+    width: 100%;
+    height: 100vh;
+}
+.navBar{
+
+}
