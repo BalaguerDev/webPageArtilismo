@@ -2,9 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Bellota Text', cursive;
+    --principalColor: #582E29;
   }
 
-/* INDEX */
+/* INDEX *//* INDEX *//* INDEX */
+/* INDEX *//* INDEX *//* INDEX */
+/* INDEX *//* INDEX *//* INDEX */
 
 .bkg{
     background: url(../Assets/Imagenes/Imagen\ 19.jpg) no-repeat center center fixed;
@@ -40,7 +44,72 @@
 
 
 
-/* TAMAÑO SMARTPHONES */
+
+  /* HOME */ /* HOME */ /* HOME */
+  /* HOME */ /* HOME */ /* HOME */
+  /* HOME */ /* HOME */ /* HOME */
+
+.containHome{
+    background: url(../Assets/Imagenes/DSC_8364i238.jpg)no-repeat center center fixed;
+  /*   opacity: 0.9; */
+    background-size: cover;
+    background-color: var(--principalColor);
+    width: 100%;
+    height: 100vh;
+}
+
+.navBar{
+    background-color:white;
+    padding:0 4vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 20px;
+}
+.logoNavBar{
+margin:5px 0;
+}
+
+.menuNavBar{
+    display: inline;
+}
+.listMenu{
+    list-style-type: none;
+
+}
+.elementMenu{
+    display:inline;
+    font-weight: 400;
+    padding: 0 20px;
+    color:var(--principalColor);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-color:none ;
+}
+.elementColor{
+    background-color: #582e29ce;
+    color: white;
+    border-radius: 10px;
+    padding:5px 10px;
+    font-weight: 700;
+}
+
+.logoPage{
+    display: flex;
+    justify-content: center;
+}
+.logoPage img{
+    width: 30vw;
+    margin-top: 10vw;
+}
+
+
+/* TAMAÑO SMARTPHONES *//* TAMAÑO SMARTPHONES */
+/* TAMAÑO SMARTPHONES *//* TAMAÑO SMARTPHONES */
+
+
+/* INDEX *//* INDEX *//* INDEX */
 
 @media only screen and (max-width: 767px) {
     body {
@@ -61,20 +130,14 @@
     
     .icons a img{
         width: 4vw;
-    
     }
-  }
+  
 
 
-  /* HOME */
+    /* HOME */ /* HOME */ /* HOME */
 
-.containHome{
-    background: url(../Assets/Imagenes/DSC_8364i238.jpg) no-repeat center center fixed;
-    background-size: cover;
-    background-color: #582E29;
-    width: 100%;
-    height: 100vh;
-}
-.navBar{
-
+    .logoPage img{
+        width: 50vw;
+        margin-top: 10vw;
+    }
 }
