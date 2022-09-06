@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -22,14 +23,14 @@ h1{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2vw;
     color:var(--principalColor);
     font-family: 'Bellota Text';
     font-weight: 700;
 }
 
 p{
-    font-size: 20px;
+    font-size: 1.45vw;
     font-family: 'Poiret One';
     color:var(--principalColor);
 }
@@ -40,7 +41,7 @@ p{
 /* INDEX *//* INDEX *//* INDEX */
 
 .bkg{
-    background: url(../Assets/Imagenes/Imagen\ 19.jpg) no-repeat center center fixed;
+    background: url(../Assets/Imagenes/fondoIndex.jpg) center fixed;
     background-size: cover;
     background-color: #464646;
     background-position-y: 35%;
@@ -71,6 +72,12 @@ p{
     margin: 30px 30px;
 }
 
+.terminos{
+    display: flex;
+    justify-content: center;
+    margin:0 100px;
+}
+
 
 
 
@@ -79,8 +86,7 @@ p{
   /* HOME */ /* HOME */ /* HOME */
 
 .containHome{
-    background: url(../Assets/Imagenes/DSC_8364i238.jpg)no-repeat center center fixed;
-
+    background: url(../Assets/Imagenes/fondoPortada.jpg)no-repeat center center fixed;
   /*   opacity: 0.9; */
     background-size: cover;
     background-color: var(--principalColor);
@@ -89,27 +95,40 @@ p{
 }
 
 .navBar{
-    background-color:rgba(255, 255, 255, 0.692);
+    background-color:rgba(255, 255, 255, 0.5);
     padding:0 4vw;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+    z-index: 2;
 
 }
 .logoNavBar{
-    margin:5px 0;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.menuNavBar{
-    display: inline;
+.logoNavBar img{
+    width: 3vw;
+}
+
+.listMenu{
+    display: flex;
+    align-items: center;
 }
 
 .elementMenu{
-    display:inline;
-    font-weight: 400;
-    padding: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    padding: 0 10px;
     color:var(--principalColor);
-    font-size: 20px;
+    font-size: 1.35vw;
     cursor: pointer;
 }
     .elementMenu:hover{
@@ -124,11 +143,12 @@ p{
     font-weight: 700;
 }
     .elementColor:hover{
-        background-color: white;
+        background-color: #F0D3D6;
         border: 1px solid var(--principalColor);
         border-radius: 10px;
         color: var(--principalColor);
     }
+
 
 .logoPage{
     display: flex;
@@ -136,7 +156,7 @@ p{
 }
 .logoPage img{
     width: 20vw;
-    margin-top: 12vw;
+    margin-top: 6vw;
 }
 
 .containService{
@@ -147,30 +167,96 @@ p{
 }
 
 .containService a{
-    width: 30%;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.75);
-    margin: 30px;
+    width: 20%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    margin: 0px 30px;
     text-align: center;
+    z-index: 1;
+    
 }
     .containService a:hover{
-        background-color: white;
+        background-color: #ffffff;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        border-radius: 10px;
     }
 
+.t0{
+    margin: 10px 0;
+}
+
+.t1{
+    padding: 0 20px;
+    font-weight: bold;
+
+}
+
+.newsletter{
+    margin-top: 40px;
+    background: linear-gradient(#ffffffd9, #ffffffd9), url(../Assets/Imagenes/M-J04305.jpg) no-repeat center center ;
+    background-size: cover;
+    height: 40vh;
+    text-align: center;
+}
+
+.textNews{
+    padding: 30px 0;
+}
+
+.changeFont{
+    font-family: 'Bellota Text';
+}
+
+.inputEmailNew{
+    text-align: center;
+    outline: 0;
+    width: 30vw;
+    opacity: 0.8;
+    height: 2vw;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.481), inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.terms{
+    color: #582E29;
+    font-weight: 600;
+}
+
+.enviarBtn{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #6c5452;
+    color: white;
+    border: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.481), inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
 
 
 
 
 
 
+
+
+
+/* TAMAÑO PC *//* TAMAÑO PC *//* TAMAÑO PC */
+/* TAMAÑO PC *//* TAMAÑO PC *//* TAMAÑO PC */
+
+
+
+@media only screen and (max-width: 1200px) {
+}
 
 
 /* TAMAÑO SMARTPHONES *//* TAMAÑO SMARTPHONES */
 /* TAMAÑO SMARTPHONES *//* TAMAÑO SMARTPHONES */
-
 
 /* INDEX *//* INDEX *//* INDEX */
+
 
 @media only screen and (max-width: 575px) {
     .bkg {
@@ -196,13 +282,142 @@ p{
 
 
     /* HOME */ /* HOME */ /* HOME */
+/* togglebutton */
+body {
+    background: #444;
+  }
+  
+  #toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+  }
+  
+  #toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  
+  #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle.on .two {
+    opacity: 0;
+  }
+  
+  #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  
+  #menu {
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    display: none;
+  }
+
+
+
+
     .containHome{
-        background: url(../Assets/Imagenes/DSC_8201i238.jpg) no-repeat center center;
+        background:url(../Assets/Imagenes/fondoPortada.jpg) no-repeat center center fixed;
         background-size: cover;
+        background-position-x: right;
+        height: 100vh;
     
     }
     .logoPage img{
         width: 80vw;
-        margin-top: 10vw;
+        margin-top: 20vw;
     }
+    .containService{
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .containService a{
+        width: 100%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+        margin: 10px 0px;
+        text-align: center;
+        z-index: 1;
+        
+    }
+
+    .t1{
+   
+        font-weight: bold;
+        font-size: 4vw;
+    
+    }
+
+    .t2{
+        padding:0 0 10px;
+    }
+
+    .t0{
+        margin: 10px 0;
+        font-size: 5vw;
+    }
+
+    /* NEWSLETTER */
+    .newsletter{
+    margin-top: 40px;
+    background: linear-gradient(#ffffffd9, #ffffffd9), url(../Assets/Imagenes/M-J04305.jpg) no-repeat center center ;
+    background-size: cover;
+    height: 30vh;
+    text-align: center;
+}
+
+.textNews{
+    font-size: 5vw;
+    font-family:900;
+    padding: 20px 0;
+}
+
+
+.inputEmailNew{
+    text-align: center;
+    outline: 0;
+    width: 90%;
+    height:25px;
+    opacity: 0.8;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.481), inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.terms{
+    color: #582E29;
+    font-weight: 600;
+}
+
+.enviarBtn{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #6c5452;
+    color: white;
+    border: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.481), inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+    
 }

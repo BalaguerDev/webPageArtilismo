@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;1,300;1,400&family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="../JS/script.js"></script>
 </head>
 
 <body>
@@ -22,14 +23,18 @@
       <div class="logoNavBar">
         <img src="../Assets/Logos/logo sol oolor.png" alt="isotipo, logo artilismo" width="35">
       </div>
-
-      <div class="menuNavBar">
+      <div id="toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <div id="menu" class="menuNavBar">
         <ul class="listMenu">
-          <a href=""><li class="elementMenu">INICIO</li></a>
+          <a href="inicio.html"><li class="elementMenu">INICIO</li></a>
           <a href="servicios.html"><li class="elementMenu">SERVICIOS</li></a>
-          <a href=""><li class="elementMenu">GALERÍA</li></a>
-          <a href=""><li class="elementMenu">CONÓCENOS</li></a>
-          <a href=""><li class="elementMenu elementColor">CONTACTO</li></a>
+          <a href="galeria.html"><li class="elementMenu">GALERÍA</li></a>
+          <a href="conocenos.html"><li class="elementMenu">CONÓCENOS</li></a>
+          <a href="contacto.html"><li class="elementMenu elementColor">CONTACTO</li></a>
         </ul>
       </div>
     </div>
@@ -40,23 +45,23 @@
 
       <div class="containService">
         <a href="bodas.html"><div class="bodas marco">
-          <h2>BODAS</h2>
-          <p>¿Te casas?<br><br>Aquí encontrarás toda la información para llevar a cabo uno de los días más especiales.</p>
+          <h2 class="t0 t1">BODAS</h2>
+          <p class="t1 t2">¿Te casas?<br><br>Aquí encontrarás toda la información para llevar a cabo uno de los días más especiales.</p>
 
         </div></a>
 
         <a href="cursos.html"><div class="cursos marco">
-          <h2>CURSOS</h2>
-          <p>¿Quieres aprender cómo sacar lo mejor de tu imagen de una forma sencilla y útil?<br><br>Entonces este es tu lugar.</p>
+          <h2 class="t0 t1">CURSOS</h2>
+          <p class="t1 t2">¿Quieres aprender cómo sacar lo mejor de tu imagen de una forma sencilla y útil?<br><br>Entonces este es tu lugar.</p>
 
         </div></a>
 
         <a href="shootings.html"><div class="shootings marco">
-          <h2>SHOOTINGS</h2>
-          <p>¿Quieres inmortalizar un look, un día especial o quieres un book para dedicarte a lo que te apasiona?<br><br> Contamos con un equipo de profesionales que conseguirán exactamente lo que buscas.
+          <h2 class="t0 t1">SHOOTINGS</h2>
+          <p class="t1 t2">¿Quieres inmortalizar un look, un día especial o quieres un book para dedicarte a lo que te apasiona?<br><br> Contamos con un equipo de profesionales que conseguirán exactamente lo que buscas.
             </p>
-
         </div></a>
+
       </div>
     </header>
 
@@ -64,9 +69,16 @@
 
     <!-- NEWSLETTER -->
     <div class="newsletter">
-      <h2>NEWSLETTER</h2>
+      <p class="textNews">¡Únete a nuestra <b class="changeFont">NEWSLETTER!</b><br> 
+          Disfruta de descuentos, regalos y novedades</p>
+      <form action="newsletter.php">
+        <input type="email" name="email" placeholder="Introduce tu E-mail" class="inputEmailNew" required><br><br>
+        <input type="checkbox" name="" id="" required> Acepto los <a href="term&cond.html" target="_blank" class="terms">términos y condiciones</a>
+      <button type="submit" class="enviarBtn">Enviar</button>
+      </form>
     </div>
 
 </div>
+
 </body>
 </html>
