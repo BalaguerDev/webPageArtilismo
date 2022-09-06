@@ -2,9 +2,38 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Bellota Text', cursive;
+    font-family: 'Poiret One', cursive;
     --principalColor: #582E29;
-  }
+}
+
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+h1{
+    font-size: 50px;
+    color:var(--principalColor);
+    font-family: 'Poiret One';
+}
+
+h2{
+    font-size: 40px;
+    color:var(--principalColor);
+    font-family: 'Bellota Text';
+    font-weight: 700;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Poiret One';
+    color:var(--principalColor);
+}
+
 
 /* INDEX *//* INDEX *//* INDEX */
 /* INDEX *//* INDEX *//* INDEX */
@@ -51,6 +80,7 @@
 
 .containHome{
     background: url(../Assets/Imagenes/DSC_8364i238.jpg)no-repeat center center fixed;
+
   /*   opacity: 0.9; */
     background-size: cover;
     background-color: var(--principalColor);
@@ -59,24 +89,21 @@
 }
 
 .navBar{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.692);
     padding:0 4vw;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    top: 20px;
+
 }
 .logoNavBar{
-margin:5px 0;
+    margin:5px 0;
 }
 
 .menuNavBar{
     display: inline;
 }
-.listMenu{
-    list-style-type: none;
 
-}
 .elementMenu{
     display:inline;
     font-weight: 400;
@@ -84,9 +111,11 @@ margin:5px 0;
     color:var(--principalColor);
     font-size: 20px;
     cursor: pointer;
-    text-decoration: none;
-    text-decoration-color:none ;
 }
+    .elementMenu:hover{
+        font-weight: 900;
+    }
+
 .elementColor{
     background-color: #582e29ce;
     color: white;
@@ -94,15 +123,47 @@ margin:5px 0;
     padding:5px 10px;
     font-weight: 700;
 }
+    .elementColor:hover{
+        background-color: white;
+        border: 1px solid var(--principalColor);
+        border-radius: 10px;
+        color: var(--principalColor);
+    }
 
 .logoPage{
     display: flex;
     justify-content: center;
 }
 .logoPage img{
-    width: 30vw;
-    margin-top: 10vw;
+    width: 20vw;
+    margin-top: 12vw;
 }
+
+.containService{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containService a{
+    width: 30%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 30px;
+    text-align: center;
+}
+    .containService a:hover{
+        background-color: white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    }
+
+
+
+
+
+
+
 
 
 /* TAMAÑO SMARTPHONES *//* TAMAÑO SMARTPHONES */
@@ -111,8 +172,8 @@ margin:5px 0;
 
 /* INDEX *//* INDEX *//* INDEX */
 
-@media only screen and (max-width: 767px) {
-    body {
+@media only screen and (max-width: 575px) {
+    .bkg {
       background-image: url(../Assets/Imagenes/Imagen\ 19.jpg);
     }
 
@@ -135,9 +196,13 @@ margin:5px 0;
 
 
     /* HOME */ /* HOME */ /* HOME */
-
+    .containHome{
+        background: url(../Assets/Imagenes/DSC_8201i238.jpg) no-repeat center center;
+        background-size: cover;
+    
+    }
     .logoPage img{
-        width: 50vw;
+        width: 80vw;
         margin-top: 10vw;
     }
 }
