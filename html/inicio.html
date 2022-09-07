@@ -9,8 +9,8 @@
     <meta property="og:url" content="https://www.mariaarteaga.es/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../html/style2.css">
-    <script src="../JS/script.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.css" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,5 +57,15 @@
             </div>
         </div>
     </header>
+
+    <section class="newsletter">
+        <p class="newsletterText">¡Únete a nuestra <b class="changeFont">NEWSLETTER!</b><br> 
+            Disfruta de descuentos, regalos y novedades</p>
+        <form action="newsletter.php" method="POST">
+            <input type="email" name="email" placeholder="Introduce tu E-mail" class="emailInputNew" required><br><br>
+            <input type="checkbox" name="accept" id="" required> Acepto los <a href="term&cond.html" target="_blank" class="terms">términos y condiciones</a>
+            <button type="submit" class="enviarBtn">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
