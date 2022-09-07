@@ -95,7 +95,7 @@ p{
 }
 
 .navBar{
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:#ffffff80;
     padding:0 4vw;
     display:flex;
     align-items: center;
@@ -149,6 +149,19 @@ p{
         color: var(--principalColor);
     }
 
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
 
 .logoPage{
     display: flex;
@@ -168,7 +181,7 @@ p{
 
 .containService a{
     width: 20%;
-    height: 250px;
+    height: 25vw;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     margin: 0px 30px;
@@ -283,51 +296,6 @@ p{
 
     /* HOME */ /* HOME */ /* HOME */
 /* togglebutton */
-body {
-    background: #444;
-  }
-  
-  #toggle {
-    width: 28px;
-    height: 30px;
-    margin: 10px auto;
-  }
-  
-  #toggle div {
-    width: 100%;
-    height: 5px;
-    background: white;
-    margin: 4px auto;
-    transition: all 0.3s;
-    backface-visibility: hidden;
-  }
-  
-  #toggle.on .one {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  #toggle.on .two {
-    opacity: 0;
-  }
-  
-  #toggle.on .three {
-    transform: rotate(-45deg) translate(7px, -8px);
-  }
-  
-  #menu {
-    color: white;
-    border: 1px solid white;
-    width: 150px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 3px;
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    line-height: 100px;
-    text-align: center;
-    margin: auto;
-    display: none;
-  }
-
 
 
 
@@ -336,8 +304,39 @@ body {
         background-size: cover;
         background-position-x: right;
         height: 100vh;
-    
     }
+
+    .hamburger{
+        display: block;
+        }.hamburger.active .bar:nth-child(2){
+        opacity: 0;
+        }.hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+        }.hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        }
+    
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background-color: #ffffff80;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .elementMenu{
+        margin: 16px 0
+    }
+
+    .navMenu.active{
+        left:0;
+    }
+
+
+
     .logoPage img{
         width: 80vw;
         margin-top: 20vw;

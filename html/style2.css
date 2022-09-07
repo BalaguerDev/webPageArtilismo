@@ -1,0 +1,139 @@
+/* CARACTERÍSTICAS GLOBALES */
+/* CARACTERÍSTICAS GLOBALES */
+/* CARACTERÍSTICAS GLOBALES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --color:#582E29;                        /* text color */
+    font-family: 'Bellota Text', cursive;     /* text */
+    font-family: 'Poiret One', cursive;       /* titulos */
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: var(--color);
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-transform: uppercase;
+}
+
+.navLink{
+    font-weight: 500;
+   transition: 0.7s ease;
+   font-size: 1.35vw;
+
+    }.navLink:hover{
+        background-color: #582e298e;
+        padding: 5px 10px;
+        color: white;
+        border-radius: 10px;
+    }
+
+.itemColor{
+    background-color: var(--color);
+    padding: 3px 7px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* INDEX */
+/* INDEX */
+/* INDEX */
+
+
+
+/* HOME */
+/* HOME */
+/* HOME */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILESTATUS */
+/* MOBILESTATUS */
+/* MOBILESTATUS */
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        }.hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }.hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }.hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem{
+        margin: 16px 0;
+    }
+
+    .navMenu.active{
+        left:0;
+    }
+}
