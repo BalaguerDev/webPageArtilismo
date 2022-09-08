@@ -11,15 +11,21 @@ body{
     font-family: 'Bellota Text', cursive;     /* text */
     font-family: 'Poiret One', cursive;       /* titulos */
 }
+h1{font-family: 'Poiret One';
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;}
 
 h2{
     font-family: 'Poiret One';
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 p{
     font-family: 'Bellota Text';
+    font-size: 20px;
     font-weight: 100;
 
 }
@@ -44,6 +50,9 @@ a{
     position: fixed;
     width: 100%;
     z-index: 3;
+}.navbar:hover{
+    background-color: #fffffff2;
+
 }
 
 .navMenu{
@@ -179,6 +188,7 @@ border-style: none;
 .service{
     background-color: #ffffffb3;
     backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     width: 30%;
     text-align: center;
     padding: 10px;
@@ -240,10 +250,34 @@ border-style: none;
 
 
 
+/* BODAS *//* BODAS *//* BODAS */
+/* BODAS *//* BODAS *//* BODAS */
+/* BODAS *//* BODAS *//* BODAS */
+
+.bodas{
+    display: flex;
+    padding: 100px;
+    align-items: center;
+}
 
 
+.marcoRosa{
+    background-color: #eeafb580;
+    height: fit-content;
+    background-position-y: 100px;
+    z-index: 2;
 
+}
 
+.textBodas{
+    padding: 50px;
+    color: var(--color);
+}
+
+.textBodas h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 
 
@@ -286,8 +320,7 @@ border-style: none;
         top: 50px;
         gap: 0;
         flex-direction: column;
-        background-color: #ffffffb3;
-        backdrop-filter: blur(10px);
+        background-color: #fffffff2;
         width: 100%;
         text-align: center;
         transition: 0.3s;
